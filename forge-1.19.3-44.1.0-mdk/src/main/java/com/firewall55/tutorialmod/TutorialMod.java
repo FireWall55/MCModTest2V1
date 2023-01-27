@@ -1,5 +1,6 @@
 package com.firewall55.tutorialmod;
 
+import com.firewall55.tutorialmod.block.ModBlocks;
 import com.firewall55.tutorialmod.item.ModCreativeModeTabs;
 import com.firewall55.tutorialmod.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -24,6 +25,7 @@ public class TutorialMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -44,6 +46,8 @@ public class TutorialMod {
         if(event.getTab() == ModCreativeModeTabs.TUTORIAL_TAB) {
             event.accept(ModItems.BLACK_OPAL);
             event.accept(ModItems.RAW_BLACK_OPAL);
+            event.accept(ModBlocks.ZIRCON_BLOCK);
+            event.accept(ModBlocks.ZIRCON_ORE);
         }
     }
 

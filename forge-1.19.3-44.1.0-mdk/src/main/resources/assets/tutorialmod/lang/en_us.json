@@ -2,5 +2,8 @@
   "item.tutorialmod.black_opal": "Black Opal",
   "item.tutorialmod.raw_black_opal": "Raw Black Opal",
 
+  "block.tutorialmod.zircon_block": "Block of Zircon",
+  "block.tutorialmod.zircon_ore": "Ziricon Ore",
+
   "creativemodetab.tutorial_tab": "Tutorial Tab"
 }
