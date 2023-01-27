@@ -22,14 +22,26 @@ public class ModBlocks {
     public static final DeferredRegister<Block> Blocks =
             DeferredRegister.create(ForgeRegistries.BLOCKS, TutorialMod.MOD_ID);
 
+    //registers Zircon_Block as a block
     public static final RegistryObject<Block> ZIRCON_BLOCK = registerBlock("zircon_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE) //gives it property of stone
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTabs.TUTORIAL_TAB);
 
-    ;public static final RegistryObject<Block> ZIRCON_ORE = registerBlock("zircon_ore",
-                () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                        .strength(6f).requiresCorrectToolForDrops(),
-                        UniformInt.of(3,7)), ModCreativeModeTabs.TUTORIAL_TAB);
+    public static final RegistryObject<Block> ZIRCON_ORE = registerBlock("zircon_ore",
+                    () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(6f).requiresCorrectToolForDrops(),
+                            UniformInt.of(3,7)), ModCreativeModeTabs.TUTORIAL_TAB);
+
+    public static final RegistryObject<Block> DEEPSLATE_ZIRCON_ORE = registerBlock("deepslate_zircon_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(8f).requiresCorrectToolForDrops()), ModCreativeModeTabs.TUTORIAL_TAB);
+    public static final RegistryObject<Block> ENDSTONE_ZIRCON_ORE = registerBlock("endstone_zircon_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(7f).requiresCorrectToolForDrops()), ModCreativeModeTabs.TUTORIAL_TAB);
+    public static final RegistryObject<Block> NETHERRACK_ZIRCON_ORE = registerBlock("netherrack_zircon_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTabs.TUTORIAL_TAB);
+
 
 
 

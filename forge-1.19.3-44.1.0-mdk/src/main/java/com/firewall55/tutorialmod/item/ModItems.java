@@ -9,11 +9,11 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
 
-    public static final DeferredRegister<Item> ITEMS =
+    public static final DeferredRegister<Item> ITEMS =       //allows us to use items (registers items altogether)
             DeferredRegister.create(ForgeRegistries.ITEMS, TutorialMod.MOD_ID);
 
-    public static final RegistryObject<Item> BLACK_OPAL = ITEMS.register("black_opal",
-            () -> new Item(new Item.Properties().stacksTo(5)));
+    public static final RegistryObject<Item> BLACK_OPAL = ITEMS.register("black_opal",  //makes the item with properties
+            () -> new Item(new Item.Properties().stacksTo(25).fireResistant()));
     public static final RegistryObject<Item> RAW_BLACK_OPAL = ITEMS.register("raw_black_opal",
             () -> new Item(new Item.Properties()));
 
