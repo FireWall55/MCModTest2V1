@@ -13,7 +13,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, TutorialMod.MOD_ID);
 
     public static final RegistryObject<Item> BLACK_OPAL = ITEMS.register("black_opal",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().stacksTo(5)));
     public static final RegistryObject<Item> RAW_BLACK_OPAL = ITEMS.register("raw_black_opal",
             () -> new Item(new Item.Properties()));
 
