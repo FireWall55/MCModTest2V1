@@ -47,6 +47,7 @@ public class TutorialMod {
         if(event.getTab() == ModCreativeModeTabs.TUTORIAL_TAB) {    //adds item/block to Tutorial Tab (custom tab)
             event.accept(ModItems.BLACK_OPAL);
             event.accept(ModItems.RAW_BLACK_OPAL);
+            event.accept(ModItems.EIGHT_BALL);
             event.accept(ModBlocks.ZIRCON_BLOCK);
             event.accept(ModBlocks.ZIRCON_ORE);
             event.accept(ModBlocks.DEEPSLATE_ZIRCON_ORE);

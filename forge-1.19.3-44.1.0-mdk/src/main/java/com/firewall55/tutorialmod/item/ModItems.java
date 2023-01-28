@@ -1,6 +1,7 @@
 package com.firewall55.tutorialmod.item;
 
 import com.firewall55.tutorialmod.TutorialMod;
+import com.firewall55.tutorialmod.item.custom.EightBallItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -16,6 +17,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().stacksTo(25).fireResistant()));
     public static final RegistryObject<Item> RAW_BLACK_OPAL = ITEMS.register("raw_black_opal",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> EIGHT_BALL = ITEMS.register("eight_ball",
+            () -> new EightBallItem(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus){
