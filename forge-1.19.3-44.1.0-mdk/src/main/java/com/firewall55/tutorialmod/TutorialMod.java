@@ -15,7 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
-
+//alt shift . to increase font size
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(TutorialMod.MOD_ID)
 public class TutorialMod {
@@ -53,6 +53,7 @@ public class TutorialMod {
             event.accept(ModBlocks.DEEPSLATE_ZIRCON_ORE);
             event.accept(ModBlocks.ENDSTONE_ZIRCON_ORE);
             event.accept(ModBlocks.NETHERRACK_ZIRCON_ORE);
+            event.accept(ModBlocks.JUMPY_BLOCK);
         }
     }
 
