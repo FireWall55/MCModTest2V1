@@ -53,14 +53,14 @@ public class TutorialMod {
             event.accept(ModItems.BLACK_OPAL);
             event.accept(ModItems.RAW_BLACK_OPAL);
             event.accept(ModItems.EIGHT_BALL);
+            event.accept(ModItems.SPECIAL_STICK);
+            event.accept(ModItems.CUCUMBER);
             event.accept(ModBlocks.ZIRCON_BLOCK);
             event.accept(ModBlocks.ZIRCON_ORE);
             event.accept(ModBlocks.DEEPSLATE_ZIRCON_ORE);
             event.accept(ModBlocks.ENDSTONE_ZIRCON_ORE);
             event.accept(ModBlocks.NETHERRACK_ZIRCON_ORE);
             event.accept(ModBlocks.JUMPY_BLOCK);
-            event.accept(ModItems.SPECIAL_STICK);
-
         }
     }
 

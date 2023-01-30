@@ -5,7 +5,11 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 
@@ -41,6 +45,7 @@ public class SpecialStickItem extends Item {
 
         return super.useOn(context);
     }
+
 
     private void outputValuableCoordinates(BlockPos blockPos, Player player, Block blockBelow){
         player.sendSystemMessage(Component.literal("Found " + blockBelow.toString() + "at (" +
