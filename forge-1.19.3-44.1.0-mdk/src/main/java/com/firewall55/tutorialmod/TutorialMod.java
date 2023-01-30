@@ -1,6 +1,7 @@
 package com.firewall55.tutorialmod;
 
 import com.firewall55.tutorialmod.block.ModBlocks;
+import com.firewall55.tutorialmod.enchantment.ModEnchantments;
 import com.firewall55.tutorialmod.item.ModCreativeModeTabs;
 import com.firewall55.tutorialmod.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -15,6 +16,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+
+import java.util.function.Supplier;
+
 //alt shift . to increase font size
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(TutorialMod.MOD_ID)
@@ -27,6 +31,7 @@ public class TutorialMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEnchantments.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -54,6 +59,8 @@ public class TutorialMod {
             event.accept(ModBlocks.ENDSTONE_ZIRCON_ORE);
             event.accept(ModBlocks.NETHERRACK_ZIRCON_ORE);
             event.accept(ModBlocks.JUMPY_BLOCK);
+            event.accept(ModItems.SPECIAL_STICK);
+
         }
     }
 

@@ -2,13 +2,20 @@
   "item.tutorialmod.black_opal": "Black Opal",
   "item.tutorialmod.raw_black_opal": "Raw Black Opal",
   "item.tutorialmod.eight_ball": "Eight Ball",
+  "item.tutorialmod.special_stick": "Special Stick",
 
   "block.tutorialmod.zircon_block": "Block of Zircon",
   "block.tutorialmod.zircon_ore": "Zircon Ore",
   "block.tutorialmod.deepslate_zircon_ore": "Deepslate Zircon Ore",
   "block.tutorialmod.endstone_zircon_ore": "Endstone Zircon Ore",
-  "block.tutorialmod.netherrack_zircon_ore": "Endstone Zircon Ore",
+  "block.tutorialmod.netherrack_zircon_ore": "Netherrack Zircon Ore",
   "block.tutorialmod.jumpy_block": "Jumpy Block",
 
-  "creativemodetab.tutorial_tab": "Tutorial Tab"
+  "creativemodetab.tutorial_tab": "Tutorial Tab",
+
+  "item.tutorialmod.special_stick.no_valuables": "No valuables Found :(",
+
+  "enchantment.tutorialmod.lightning_striker": "Lightning Striker"
+
+
 }

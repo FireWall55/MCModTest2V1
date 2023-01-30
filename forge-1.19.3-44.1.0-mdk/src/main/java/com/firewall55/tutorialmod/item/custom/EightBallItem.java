@@ -38,7 +38,7 @@ public class EightBallItem extends Item {
        if(Screen.hasShiftDown()){
             components.add(Component.literal("Right click to get a random number!").withStyle(ChatFormatting.AQUA));
        }else{
-           components.add(Component.literal("Press SHIFT for more info").withStyle(ChatFormatting.YELLOW));
+           components.add(Component.literal("A custom item: Press SHIFT for more info").withStyle(ChatFormatting.YELLOW));
        }
 
 
