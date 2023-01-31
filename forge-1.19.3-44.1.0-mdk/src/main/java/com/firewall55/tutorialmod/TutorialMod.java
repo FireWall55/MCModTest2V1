@@ -55,6 +55,7 @@ public class TutorialMod {
             event.accept(ModItems.EIGHT_BALL);
             event.accept(ModItems.SPECIAL_STICK);
             event.accept(ModItems.CUCUMBER);
+            event.accept(ModItems.REGEN_SWORD);
             event.accept(ModBlocks.ZIRCON_BLOCK);
             event.accept(ModBlocks.ZIRCON_ORE);
             event.accept(ModBlocks.DEEPSLATE_ZIRCON_ORE);

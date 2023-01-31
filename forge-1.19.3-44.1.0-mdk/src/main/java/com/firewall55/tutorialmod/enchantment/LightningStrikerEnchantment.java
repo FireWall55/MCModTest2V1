@@ -1,12 +1,12 @@
 package com.firewall55.tutorialmod.enchantment;
 
-import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentCategory;
+import net.minecraftforge.client.event.RegisterColorHandlersEvent;
 
 public class LightningStrikerEnchantment extends Enchantment {
     protected LightningStrikerEnchantment(Rarity rarity, EnchantmentCategory category, EquipmentSlot... equipmentSlots) {
@@ -29,6 +29,8 @@ public class LightningStrikerEnchantment extends Enchantment {
                 EntityType.LIGHTNING_BOLT.spawn(world, (ItemStack) null, null, position, MobSpawnType.TRIGGERED,
                         true,true);
             }
+
+
 
         }
 

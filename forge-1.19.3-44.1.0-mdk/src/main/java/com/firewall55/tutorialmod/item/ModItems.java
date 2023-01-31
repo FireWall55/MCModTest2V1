@@ -2,9 +2,9 @@ package com.firewall55.tutorialmod.item;
 
 import com.firewall55.tutorialmod.TutorialMod;
 import com.firewall55.tutorialmod.item.custom.EightBallItem;
+import com.firewall55.tutorialmod.item.custom.RegenSwordItem;
 import com.firewall55.tutorialmod.item.custom.SpecialStickItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -28,6 +28,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> CUCUMBER = ITEMS.register("cucumber",
             () -> new Item(new Item.Properties().food(ModFoods.CUCUMBER)));
+
+    public static final RegistryObject<Item> REGEN_SWORD = ITEMS.register("regen_sword",
+            () -> new RegenSwordItem(ModTiers.POWERFUL, 2, 3f, new Item.Properties()));
+
 
 
 

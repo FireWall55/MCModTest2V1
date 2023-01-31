@@ -18,6 +18,10 @@ public class ModEnchantments {
                     () -> new LightningStrikerEnchantment(Enchantment.Rarity.UNCOMMON,
                             EnchantmentCategory.WEAPON, EquipmentSlot.MAINHAND));
 
+    public static RegistryObject<Enchantment> REGEN = ENCHANTMENTS.register("regen",
+            () -> new Regen(Enchantment.Rarity.VERY_RARE,
+                    EnchantmentCategory.WEAPON, EquipmentSlot.MAINHAND));
+
     public static void register(IEventBus eventBus){
         ENCHANTMENTS.register(eventBus);
     }

@@ -4,6 +4,7 @@
   "item.tutorialmod.eight_ball": "Eight Ball",
   "item.tutorialmod.special_stick": "Special Stick",
   "item.tutorialmod.cucumber": "Cucumber",
+  "item.tutorialmod.regen_sword": "Regeneration Sword",
 
   "block.tutorialmod.zircon_block": "Block of Zircon",
   "block.tutorialmod.zircon_ore": "Zircon Ore",
@@ -16,7 +17,8 @@
 
   "item.tutorialmod.special_stick.no_valuables": "No valuables Found :(",
 
-  "enchantment.tutorialmod.lightning_striker": "Lightning Striker"
+  "enchantment.tutorialmod.lightning_striker": "Lightning Striker",
+  "enchantment.tutorialmod.regen": "Regeneration"
 
 
 }

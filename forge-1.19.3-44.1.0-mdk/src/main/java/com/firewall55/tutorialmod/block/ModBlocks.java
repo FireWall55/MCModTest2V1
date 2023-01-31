@@ -42,9 +42,18 @@ public class ModBlocks {
                     .strength(4f).requiresCorrectToolForDrops(),
                     UniformInt.of(3,7)), ModCreativeModeTabs.TUTORIAL_TAB);
 
+
+
+
+
     public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block",
             () -> new JumpyBlock(BlockBehaviour.Properties.of(Material.STONE) //gives it property of stone
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTabs.TUTORIAL_TAB);
+
+
+
+
+
 
 
 
