@@ -1,16 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "#$#",
-    "###"
+    "&$&",
+    "$$$",
+    " # "
   ],
   "key": {
     "#": {
-      "item": "tutorialmod:black_opal"
+      "item": "minecraft:stick"
     },
     "$": {
-      "item": "minecraft:stick"
+      "item": "minecraft:diamond"
+    },
+    "&": {
+      "item": "minecraft:redstone"
     }
   },
   "result": {

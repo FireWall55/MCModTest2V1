@@ -7,7 +7,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.context.UseOnContext;
-import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 
@@ -33,7 +32,7 @@ public class RegenSwordItem extends SwordItem {
     @Override
     public void onCraftedBy(ItemStack itemStack, Level level, Player player) {
         itemStack.enchant(ModEnchantments.REGEN.get(), 2);
-        itemStack.enchant(Enchantments.SHARPNESS, 15);
+        itemStack.enchant(Enchantments.SHARPNESS, 5);
         super.onCraftedBy(itemStack, level, player);
     }
 }
