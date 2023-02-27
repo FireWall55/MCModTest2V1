@@ -2,6 +2,7 @@ package com.firewall55.tutorialmod.block;
 
 import com.firewall55.tutorialmod.TutorialMod;
 import com.firewall55.tutorialmod.block.custom.JumpyBlock;
+import com.firewall55.tutorialmod.block.custom.ZirconLampBlock;
 import com.firewall55.tutorialmod.item.ModCreativeModeTabs;
 import com.firewall55.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -49,6 +50,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block",
             () -> new JumpyBlock(BlockBehaviour.Properties.of(Material.STONE) //gives it property of stone
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTabs.TUTORIAL_TAB);
+    public static final RegistryObject<Block> ZIRCON_LAMP = registerBlock("zircon_lamp",
+            () -> new ZirconLampBlock(BlockBehaviour.Properties.of(Material.STONE) //gives it property of stone
+                    .strength(6f).requiresCorrectToolForDrops()
+                    .lightLevel(state -> state.getValue(ZirconLampBlock.LIT ) ? 15 : 0)), ModCreativeModeTabs.TUTORIAL_TAB);
 
 
 

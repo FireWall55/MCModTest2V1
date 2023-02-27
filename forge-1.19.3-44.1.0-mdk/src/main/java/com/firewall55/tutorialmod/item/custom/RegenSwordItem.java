@@ -1,9 +1,15 @@
 package com.firewall55.tutorialmod.item.custom;
 
 import com.firewall55.tutorialmod.enchantment.ModEnchantments;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.context.UseOnContext;
@@ -23,6 +29,10 @@ public class RegenSwordItem extends SwordItem {
 
         float healthAdd = player.getHealth() + 6;
         player.setHealth(healthAdd);
+        //player.setInvisible(!player.isInvisible());
+        player.setNoGravity(false);
+        player.setInvulnerable(!player.isInvulnerable());
+        //player.getEnderChestInventory
         player.getCooldowns().addCooldown(this, 40);//2 seconds
 
         return super.useOn(context);
@@ -35,5 +45,6 @@ public class RegenSwordItem extends SwordItem {
         itemStack.enchant(Enchantments.SHARPNESS, 5);
         super.onCraftedBy(itemStack, level, player);
     }
+
 }
 

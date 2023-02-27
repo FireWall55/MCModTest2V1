@@ -57,6 +57,4 @@ public class SpecialStickItem extends Item {
                 || block == Blocks.DIAMOND_ORE || block == Blocks.IRON_ORE;
     }
 
-
-
 }

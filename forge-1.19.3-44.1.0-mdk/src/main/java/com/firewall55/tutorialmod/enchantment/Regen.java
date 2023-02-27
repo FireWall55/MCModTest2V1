@@ -15,6 +15,7 @@ public class Regen extends Enchantment{
     public void doPostAttack(LivingEntity attacker, Entity target, int level) {
                 float healthAdd = attacker.getHealth() + 2;
                 attacker.setHealth(healthAdd);
+                //do attack. something to apply freeze or something for a different enchantment
             // attacker.sendSystemMessage(Component.literal(attacker.getOffhandItem().toString()));
             // if (attacker.getOffhandItem().toString().equals("1 stick")) { execution }
             super.doPostAttack(attacker, target, level);

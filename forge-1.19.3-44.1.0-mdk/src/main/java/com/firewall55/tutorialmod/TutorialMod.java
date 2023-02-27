@@ -9,6 +9,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -62,6 +63,7 @@ public class TutorialMod {
             event.accept(ModBlocks.ENDSTONE_ZIRCON_ORE);
             event.accept(ModBlocks.NETHERRACK_ZIRCON_ORE);
             event.accept(ModBlocks.JUMPY_BLOCK);
+            event.accept(ModBlocks.ZIRCON_LAMP);
         }
     }
 
@@ -70,6 +72,7 @@ public class TutorialMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+
 
         }
     }
