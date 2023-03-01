@@ -5,6 +5,9 @@
   "item.tutorialmod.special_stick": "Special Stick",
   "item.tutorialmod.cucumber": "Cucumber",
   "item.tutorialmod.regen_sword": "Regeneration Sword",
+  "item.tutorialmod.blueberry": "Blueberry",
+  "item.tutorialmod.blueberry_seeds": "Blueberry Seeds",
+  "item.tutorialmod.powder": "Special Powder",
 
   "block.tutorialmod.zircon_block": "Block of Zircon",
   "block.tutorialmod.zircon_ore": "Zircon Ore",
@@ -13,6 +16,7 @@
   "block.tutorialmod.netherrack_zircon_ore": "Netherrack Zircon Ore",
   "block.tutorialmod.jumpy_block": "Jumpy Block",
   "block.tutorialmod.zircon_lamp": "Zircon lamp",
+  "block.tutorialmod.blueberry_crop": "Blueberry Crop",
 
   "creativemodetab.tutorial_tab": "Tutorial Tab",
 
