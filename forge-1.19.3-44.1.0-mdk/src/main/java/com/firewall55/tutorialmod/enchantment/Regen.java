@@ -1,7 +1,9 @@
 package com.firewall55.tutorialmod.enchantment;
 
 
-import net.minecraft.network.chat.Component;
+
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -17,6 +19,7 @@ public class Regen extends Enchantment{
     }
     @Override
     public void doPostAttack(LivingEntity attacker, Entity target, int level) {
+        attacker.addEffect(new MobEffectInstance(MobEffects.BLINDNESS,6000));
                 float healthAdd = attacker.getHealth() + 2;
                 attacker.setHealth(healthAdd);
                 //do attack. something to apply freeze or something for a different enchantment

@@ -28,7 +28,9 @@ public class EightBallItem extends Item {
             // Set a cooldown
             player.getCooldowns().addCooldown(this, 20);//20 ticks is 1 second
         }
-
+        //sets itemstack to the stack of items in use
+        ItemStack itemStack = player.getItemInHand(hand);
+        itemStack.shrink(1);//gets rid of one item
 
         return super.use(level, player, hand);
     }

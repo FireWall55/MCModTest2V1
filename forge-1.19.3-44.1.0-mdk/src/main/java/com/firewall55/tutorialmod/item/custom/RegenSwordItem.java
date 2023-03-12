@@ -26,12 +26,12 @@ public class RegenSwordItem extends SwordItem {
     @Override
     public InteractionResult useOn(UseOnContext context) {
         Player player = context.getPlayer();
-
         float healthAdd = player.getHealth() + 6;
         player.setHealth(healthAdd);
+        player.setOnGround(true);
         //player.setInvisible(!player.isInvisible());
         player.setNoGravity(false);
-        player.setInvulnerable(!player.isInvulnerable());
+        player.setInvulnerable(false);
         //player.getEnderChestInventory
         player.getCooldowns().addCooldown(this, 40);//2 seconds
 

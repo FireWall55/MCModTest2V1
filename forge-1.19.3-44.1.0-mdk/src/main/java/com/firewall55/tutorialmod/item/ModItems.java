@@ -44,6 +44,9 @@ public class ModItems {
     public static final RegistryObject<Item> POWDER = ITEMS.register("powder",
             () -> new Item(new Item.Properties().food(ModFoods.POWDER)));
 
+    public static final RegistryObject<Item> POWDER_SEEDS = ITEMS.register("powder_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.POWDER_CROP.get(),new Item.Properties()));
+
 
 
 

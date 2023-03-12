@@ -8,6 +8,9 @@
   "item.tutorialmod.blueberry": "Blueberry",
   "item.tutorialmod.blueberry_seeds": "Blueberry Seeds",
   "item.tutorialmod.powder": "Special Powder",
+  "item.tutorialmod.powder_seeds": "OP Powder Seeds",
+  "item.tutorialmod.special_stick.no_valuables": "No valuables Found :(",
+
 
   "block.tutorialmod.zircon_block": "Block of Zircon",
   "block.tutorialmod.zircon_ore": "Zircon Ore",
@@ -17,13 +20,15 @@
   "block.tutorialmod.jumpy_block": "Jumpy Block",
   "block.tutorialmod.zircon_lamp": "Zircon lamp",
   "block.tutorialmod.blueberry_crop": "Blueberry Crop",
+  "block.tutorialmod.powder_crop": "Powder Crop",
+
+
+  "enchantment.tutorialmod.lightning_striker": "Lightning Striker",
+  "enchantment.tutorialmod.regen": "Regeneration",
+
 
   "creativemodetab.tutorial_tab": "Tutorial Tab",
 
-  "item.tutorialmod.special_stick.no_valuables": "No valuables Found :(",
-
-  "enchantment.tutorialmod.lightning_striker": "Lightning Striker",
-  "enchantment.tutorialmod.regen": "Regeneration"
-
-
+  "entity.minecraft.villager.tutorialmod.jumpy_master": "Jumpy Master",
+  "entity.minecraft.villager.tutorialmod.drug_dealer": "Def Not Sus Guy"
 }

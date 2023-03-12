@@ -4,6 +4,7 @@ import com.firewall55.tutorialmod.block.ModBlocks;
 import com.firewall55.tutorialmod.enchantment.ModEnchantments;
 import com.firewall55.tutorialmod.item.ModCreativeModeTabs;
 import com.firewall55.tutorialmod.item.ModItems;
+import com.firewall55.tutorialmod.villager.ModVillagers;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -36,6 +37,7 @@ public class TutorialMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModEnchantments.register(modEventBus);
+        ModVillagers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -45,7 +47,9 @@ public class TutorialMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        event.enqueueWork(() -> {
+            ModVillagers.registerPOIs();
+        });
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event){
@@ -60,6 +64,7 @@ public class TutorialMod {
             event.accept(ModItems.SPECIAL_STICK);
             event.accept(ModItems.CUCUMBER);
             event.accept(ModItems.REGEN_SWORD);
+            event.accept(ModItems.POWDER);
             event.accept(ModBlocks.ZIRCON_BLOCK);
             event.accept(ModBlocks.ZIRCON_ORE);
             event.accept(ModBlocks.DEEPSLATE_ZIRCON_ORE);
@@ -68,6 +73,7 @@ public class TutorialMod {
             event.accept(ModBlocks.JUMPY_BLOCK);
             event.accept(ModBlocks.ZIRCON_LAMP);
             event.accept(ModBlocks.BLUEBERRY_CROP);
+            event.accept(ModBlocks.POWDER_CROP);
         }
     }
 
@@ -77,6 +83,7 @@ public class TutorialMod {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.BLUEBERRY_CROP.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.POWDER_CROP.get(), RenderType.cutout());
 
         }
     }

@@ -3,6 +3,7 @@ package com.firewall55.tutorialmod.block;
 import com.firewall55.tutorialmod.TutorialMod;
 import com.firewall55.tutorialmod.block.custom.BlueberryCropBlock;
 import com.firewall55.tutorialmod.block.custom.JumpyBlock;
+import com.firewall55.tutorialmod.block.custom.PowderCropBlock;
 import com.firewall55.tutorialmod.block.custom.ZirconLampBlock;
 import com.firewall55.tutorialmod.item.ModCreativeModeTabs;
 import com.firewall55.tutorialmod.item.ModItems;
@@ -11,7 +12,6 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -58,6 +58,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> BLUEBERRY_CROP = Blocks.register("blueberry_crop",
             () -> new BlueberryCropBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.WHEAT)));
 
+    public static final RegistryObject<Block> POWDER_CROP = Blocks.register("powder_crop",
+            () -> new PowderCropBlock(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.WHEAT)));
 
 
 
